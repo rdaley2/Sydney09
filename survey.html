@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Which Candy do you prefer?</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Patua+One" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	
+	<body>
+		<div class="login">
+			<header>
+				<h1> Kitkats or Pocky? </h1>
+							<input type="Login" value="login">	
+		
+			  </header>
+			
+		</div>
+
+		<div class="kitkat">
+			<img src="images/KitKatWrapper.jpg" alt="Wrapper">
+
+
+			<p> The standard bars consist of two or four fingers
+            composed of three layers of wafer, separated and
+            covered by an outer layer of chocolate. </p>
+
+         </div>
+         
+        <div class="pocky">
+        	<img src="images/pocky.jpg" alt="Wrapper">
+
+        	<p> With plenty of sticks in each box, Pocky is the
+            perfect snack for bringing people closer together
+            and livening the mood. </p>
+
+         </div>
+            
+			<form method="post" class="survey" id="form" action="response-processor.php">
+				<div class="section">
+					<div>
+						<div class="question">
+							<span>First Name</span>
+							<input type="text" name="name" id="name">
+						</div>
+						<div class="question">
+							<span>Last Name</span>
+							<input type="last" name="last" id="last">
+						</div>
+					    
+					    <div class="question">
+							<span>Email</span>
+							<input type="email" name="email" id="email">
+						</div>
+						<div class="question">
+							<span>Cell Number</span>
+							<input type="cell" name="cell" id="cell">
+						</div>
+					</div>
+				</div>
+
+				<div class="question">
+							<p>
+								<span> Which of these brands have you heard of?</span>
+								<br>
+								<input type="radio" name="familiar1" value="KitKat">
+								KitKat
+								<br>
+								<input type="radio" name="familiar1" value="Pocky">
+								Pocky
+								<br>
+							</p>
+						</div>
+
+						<div class="question">
+							<p>
+								<span> WWhich of these brands have you tried? </span>
+								<br>
+								<input type="radio" name="try1" id="try1" value="KitKat">
+								KitKat
+								<br>
+								<input type="radio" name="try1" id="try1" value="Pocky">
+								Pocky
+								<br>
+								
+							</p>
+						</div>
+
+						<div class="question">
+							<p>
+								<span> Which of these brands do you prefer? </span>
+								<br>
+								<input type="radio" name="pref1" id="pref1" value="KitKat">
+								KitKat
+								<br>
+								<input type="radio" name="1" id="pref1" value="Pocky">
+								Pocky
+								<br>
+								
+							</p>
+
+					<div class="footer">
+							
+							<span>Please explain.</span>
+							<br>
+							<textarea name="why1" id="why1"></textarea>
+						</div> 
+						<div class="submit-cont">
+							<input type="submit" value="Submit Your Answers!">
+
+						</div>	
+
+			</form>
+		</div>
+	</body>
+</html>

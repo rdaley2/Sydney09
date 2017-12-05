@@ -1,0 +1,71 @@
+html, body {
+	background-color: #e6ce8e;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: inline-grid;
+	border: solid,5px,black;
+}
+
+.login {
+	width: 95%;
+	max-width: 1000px;
+	min-height: 100%;
+	margin: 4px auto;
+	padding: 30px 50px;
+	background-color: #CCC;
+	border-radius: 9px;
+	
+}
+
+.login h1{
+	color:#d70021;
+	font-family: 'Patua One', cursive;
+
+}
+
+input[type="Login"]{
+	font-family: 'Patua One', cursive;
+	background-color: #d70021;
+	position: fixed;
+	position: absolute;
+    top: 10px;
+	left:0;
+	width:30%; 
+	color: black;
+}
+
+
+
+.footer span{
+	font-family: 'Patua One', cursive;
+	background-color: #d70021;
+	position: fixed;
+	right:0;
+	position: absolute;
+    bottom: 10px;
+	width:35%; 
+	color: black;
+}
+
+
+
+input[type="Submit Here"]{
+	font-family: 'Patua One', cursive;
+	background-image: url("images/wrapper.png");
+	position:fixed;
+	right:0;
+	position: absolute;
+    bottom: 10px;
+	width:35%; 
+	color: White;
+}
+
+.question{
+list-style-image: url(images/bullet.png); }
+
+}
+
+
+
+
