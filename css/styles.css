@@ -1,132 +1,71 @@
-body{
-	font-family: Arial, Helvetica, sans-serif;
-	word-break: keep-all;
-  background-color:#CA3632;
-}	
-
-h1{	
-  /*color:red;*/
-  font-size: 50px;
-  text-align: center;
+html, body {
+	background-color: #e6ce8e;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: inline-grid;
+	border: solid,5px,black;
 }
 
-.box2 h1{
-  color: red;
+.login {
+	width: 95%;
+	max-width: 1000px;
+	min-height: 100%;
+	margin: 4px auto;
+	padding: 30px 50px;
+	background-color: #CCC;
+	border-radius: 9px;
+	
 }
 
-h2{
-	font-style: italic;
-	border-left-width: 5px;
-	text-align: center;
-  font-size: 180%;
-  letter-spacing: 1px;
-  color: #990000;
+.login h1{
+	color:#d70021;
+	font-family: 'Patua One', cursive;
+
 }
 
-h1, h2{
-  font-family: 'Titillium Web', sans-serif;
-  clear: both;
-}
-
-h3{
-	color: #990000;
-	text-align: center;
-}
-
-figure{
-	float: left;
-	text-align: center;	
-}
-
-.footer{
-  padding-top: 200px;
-  margin-left: 420px;
-  font-size: 20px;
-  color: black;
+input[type="Login"]{
+	font-family: 'Patua One', cursive;
+	background-color: #d70021;
+	position: fixed;
+	position: absolute;
+    top: 10px;
+	left:0;
+	width:30%; 
+	color: black;
 }
 
 
-/*FORM DETAILS*/
-<style type="text/css">
-.formformat {
-    margin:10px auto;
-    max-width: 400px;
-    padding: 20px 12px 10px 20px;
-    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-.formformat li {
-    padding: 0;
-    display: block;
-    list-style: none;
-    margin: 10px 0 0 0;
-}
-.formformat label{
-    margin:0 0 3px 0;
-    padding:0px;
-    display:block;
-    font-weight: bold;
-    color: #970000;
-}
-.formformat input[type=text], 
-.formformat input[type=number],
-.formformat input[type=search],
-.formformat input[type=time],
-.formformat input[type=url],
-.formformat input[type=email],
-.formformat input[type=pnumber],
 
-textarea, 
-select{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    border:1px solid #BEBEBE;
-    padding: 7px;
-    margin:0px;
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;  
-}
-.formformat input[type=text]:focus, 
-.formformat input[type=date]:focus,
-.formformat input[type=datetime]:focus,
-.formformat input[type=number]:focus,
-.formformat input[type=search]:focus,
-.formformat input[type=time]:focus,
-.formformat input[type=url]:focus,
-.formformat input[type=email]:focus,
-.formformat textarea:focus, 
-.formformat select:focus{
-    -moz-box-shadow: 0 0 8px #88D5E9;
-    -webkit-box-shadow: 0 0 8px #88D5E9;
-    box-shadow: 0 0 8px #88D5E9;
-    border: 1px solid #88D5E9;
-}
-.formformat .field-divided{
-    width: 49%;
+.footer span{
+	font-family: 'Patua One', cursive;
+	background-color: #d70021;
+	position: fixed;
+	right:0;
+	position: absolute;
+    bottom: 10px;
+	width:35%; 
+	color: black;
 }
 
-.formformat .field-long{
-    width: 100%;
+
+
+input[type="Submit Here"]{
+	font-family: 'Patua One', cursive;
+	background-image: url("images/wrapper.png");
+	position:fixed;
+	right:0;
+	position: absolute;
+    bottom: 10px;
+	width:35%; 
+	color: White;
 }
-.formformat .field-select{
-    width: 100%;
+
+.question{
+list-style-image: url(images/bullet.png); }
+
 }
-.formformat .field-textarea{
-    height: 100px;
-}
-.formformat input[type=submit], .formformat input[type=button]{
-    background: #ff1919;
-    padding: 8px 15px 8px 15px;
-    border: none;
-    color: #fff;
-}
-.formformat input[type=submit]:hover, .formformat input[type=button]:hover{
-    background: #FF4500;
-    box-shadow:none;
-    -moz-box-shadow:none;
-    -webkit-box-shadow:none;
-}
-</style>
+
+
+
+
