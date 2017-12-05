@@ -1,0 +1,132 @@
+html, body{
+  margin:0;
+  height:100%;
+}
+
+.container{
+  display: grid;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1000px; 
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto 800px 100px auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  background-color:#FCFBE3;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.imagegrid img{
+  max-width: 100%;
+  min-width: 70px;
+  height:auto;
+}
+
+.imagething{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 3;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.box1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.box2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row:1;
+}
+
+.box3 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.box4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+  max-width: 100%;
+  min-width: 100px;
+}
+
+.box5 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row: 2;
+  max-width: 100%;
+  min-width: 100px;
+}
+
+.mainbox{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 3;  
+  max-width: 90%;
+  min-width: 200px;
+}
+
+.mainbox form{
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.mainbox h2{
+  margin-left:50px;
+  font-size: 320%;
+}
+
+.endbox{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 5;
+  max-width: 100%;
+  min-width: 400px;
+  margin-top: 20px;
+}
+
+
+/*for the thank you page*/
+
+.container2{
+  display: grid;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1000px; 
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  background-color:#FCFBE3;
+  padding-right: 30px;
+  padding-left: 30px;
+  min-height:100%;
+  margin-bottom: auto;
+  background-image: url('../images/celebration.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.mainbox2{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 3;  
+  max-width: 90%;
+  min-width: 200px;
+}
+
+
+.thanksbox {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row:1;
+  margin-top: 300px;
+}

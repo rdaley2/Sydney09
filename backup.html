@@ -1,0 +1,189 @@
+/////////////////////////////////////////////
+thanks.php
+//////////////////////////////////////////////
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>CSC174 Assignment 08- Sdyney</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+<body>
+   <div>
+      Thank you, <?php echo $_POST["fname"]; ?> 
+   </div>
+
+   
+</body>
+</html>
+/////////////////////////////////////////////
+assignment08.html
+////////////////////////////////////////////
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CSC174 Assignment 08- Sdyney</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/grid.css">
+</head>
+
+<body>
+<div class="container">
+
+	<div class="box1 imagegrid"><img src="images/pockylogo.png" alt="Pocky"></div>
+	
+	<div class="box2"><h1>Do you prefer Kit Kats or Pocky?</h1></div>
+	
+	<div class="box3 imagegrid"><img src="images/kitkatlogo.png" alt="Kitkat"></div>
+
+		<div class="box4">
+		<h2>What is a Kit Kat?</h2>
+			<p>
+				Kit Kat is a chocolate-covered wafer bar confection created by Rowntree's of York, United Kingdom, and is now produced globally by Nestlé, which acquired Rowntree in 1988,[1] with the exception of the United States where it is made under license by H.B. Reese Candy Company, a division of The Hershey Company. The standard bars consist of two or four fingers composed of three layers of wafer, separated and covered by an outer layer of chocolate. Each finger can be snapped from the bar separately. There are many different flavours of Kit Kat, including milk, white, and dark chocolate.
+			</p>
+		</div>
+
+		<div class="box5">
+		<h2>What is Pocky?</h2>
+			<p>
+				Pocky is about sharing happiness with friends, family, co-workers—anyone, anytime, anywhere! Just open a box, pass it around, and watch the smiles and happiness spread.
+
+				With plenty of sticks in each box, Pocky is the perfect snack for bringing people closer together and livening the mood. Or simply relax on the couch and share Pocky with that special someone.
+
+				Great to have around the house. With the no-mess handle on every Pocky stick, your kids won’t have chocolate all over their hands.
+
+				And for the same reason, Pocky is also great for parties. Try it as a drink stirrer in a cocktail or in your morning cup of coffee or tea.
+
+				Bring some Pocky to school or work, and you’ll have a delicious snack to keep you going throughout the day.
+
+				And if you haven’t already thought of this one, Pocky goes great with ice cream and other desserts!
+			</p>
+		</div>
+	
+	<div class="mainbox">	
+	<form method="post" action="thanks.php">
+<ul class="formformat">
+    <li>
+    	<label>Full Name </label>
+    	<input type="text" name="fname" id="fname" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="lname" id="lname" class="field-divided" placeholder="Last" />
+    </li>
+    <li>
+        <label>Email</label>
+        <input type="email" name="email" class="field-long" />
+    </li>
+    <li>
+    	<label>Phone Number</label>
+        <input type="pnumber" name="pnumber" class="field-long" />
+    </li>
+    <li>
+    	<label>Which Candies Do You Like?</label>
+    	<input type="checkbox" name="pocky" value="pocky"> Pocky<br>
+		<input type="checkbox" name="kitkat" value="kitkat"> Kitkat<br>
+    </li>
+
+    <li>
+    	<label>Which One Do You Like The Most?</label>
+    	<input type="radio" name="preference" value="pocky2"> Pocky<br>
+		<input type="radio" name="preference" value="kitkat2"> Kitkat<br>
+		<input type="radio" name="preference" value="cantchoose"> I can't choose<br>
+		<input type="radio" name="preference" value="neither"> Neither
+    </li>
+
+    <li>
+        <label>Why did you choose the answer above?</label>
+        <textarea name="message" class="field-long field-textarea"></textarea>
+    </li>
+    <li>
+        <input type="submit" value="Submit" />
+    </li>
+</ul>
+</form>
+</div>
+
+<div class="endbox">
+	<footer>
+		<h2>Information Links</h2>
+		<p><a href="https://en.wikipedia.org/wiki/Kit_Kat">Wikipedia: KitKat</a></p>
+		<p><a href="http://www.pocky.com/">Pocky.com</a></p>
+	</footer>
+</div>
+
+</div>
+
+</body>
+</html>
+
+//////////////////////////////////////////////////////////////////////
+delete.php
+//////////////////////////////////////////////////////////////////////////
+<?php
+	$dbhost = "localhost";
+	$dbuber = "urcscon3_sydney";
+	$dbpass = "coffee1N";
+	$dbname = "urcscon3_sydney";
+	$connection = new mysqli('66.147.242.186', 'urcscon3_sydney', 'coffee1N', 'urcscon3_sydney');
+	$query = "DELETE FROM survey ";
+	$query .= "WHERE counter = {$_POST['counter'] ";
+	$query .= "LIMIT 1";
+	$result = mysqli_query($connection, $query);
+	?>
+
+<?php
+		if ($result) {
+?>
+    <div>
+        The record <?php echo $_POST['counter'] ?> has been deleted.
+    </div>
+
+<?php
+} else {
+    die("Database query failed.");
+}
+?>
+
+///////////////////////////////////////////////////////////////////////////
+update.php
+///////////////////////////////////////////////////////////////////////////
+<?php
+	$dbhost = "localhost";
+	$dbuber = "urcscon3_sydney";
+	$dbpass = "coffee1N";
+	$dbname = "urcscon3_sydney";
+	$connection = new mysqli('66.147.242.186', 'urcscon3_sydney', 'coffee1N', 'urcscon3_sydney');
+	$counter = $_POST['counter'];
+	$fname = Trim(stripslashes($_POST['fname']));
+	$email = Trim(stripslashes($_POST['email']));
+	$pnumber = Trim(stripslashes($POST['pnumber']));
+	
+	$fname = mysqli_real_excape_string($connection, $fname);
+	$email = mysqli_real_excape_string($connection, $email);
+	$pnumber = mysqli_real_excape_string($connection, $pnumber);
+	$query = "UPDATE survey SET";
+	$query .= "fname = '$fname', email ='$email', pnumber = $'pnumber' ";
+	$query .= "WHERE counter = {$ounter}";
+	$result = mysqli_query($connection, $query);
+?>
+
+<?php
+	if ($result) {
+?>
+   	 <div>
+        The record <?php echo $_POST['counter'] ?> has been updated.
+    </div>
+
+<?php
+} else {
+    die("Database query failed.");
+}
+?>
+
+<?php
+mysqli_close($connection);
+?>
