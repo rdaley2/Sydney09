@@ -1,6 +1,6 @@
-CSC174 Assignment 8
+CSC174 Assignment 9
 
-IA: Lulu Chen
-Designer: Adam Struhl
-Coder: Anthony Russell
-Backend: Estella Kim
+IA: Jien Ogawa
+Designer: Jackie Powell
+Coder: Ryan Daley
+Backend: Ben Ackerman

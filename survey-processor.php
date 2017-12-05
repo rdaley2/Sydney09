@@ -59,7 +59,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>CSC174 Assignment 08- Sdyney</title>
+		<title>CSC174 Assignment 09 - Sdyney</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/styles.css">
@@ -73,7 +73,7 @@
 	   		<div class="mainbox2">
 		   		<ul class="formformat">
 		   			<li>
-					   <form method="post" action="assignment08.html">
+					   <form method="post" action="assignment09.html">
 					   	<input type="submit" value="Back to Survey" />
 					   </form>
 					</li>
