@@ -3,6 +3,9 @@ body {margin:0;}
 .topnav {
   overflow: hidden;
   background-color: #42211B;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .topnav a {
