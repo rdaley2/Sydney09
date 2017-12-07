@@ -32,6 +32,10 @@ if ( isset($_SESSION["user"]) ) {
 						echo "Incorrect username or password!  Please try again...";
 					}
 					
+					elseif ( $_GET["err"] == "reg_ok" ) {
+						echo "Please log in with your new account.";
+					}
+					
 					else {
 						echo "Ben only had one job!  Error code was \"".$_GET["err"]."\"";
 					}
