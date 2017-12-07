@@ -61,47 +61,63 @@ KitKats are a fun treat to share with friends, family, or even a stranger you me
 	
 	<h2>Survey</h2>
 
-	<form method="post" action="survey-processor.php">
-<ul class="formformat">
-    <li>
-    	<label>Full Name </label>
-    	<input type="text" name="fname" id="fname" class="field-divided" placeholder="First" required/>&nbsp;<input type="text" name="lname" id="lname" class="field-divided" placeholder="Last" required/>
-    </li>
-    <li>
-        <label>Email</label>
+		<form method="post" action="survey-processor.php">
+<div class="info-wrapper">
+
+	<div>
+    	<label>First Name </label><br>
+    	<input type="text" name="fname" id="fname" class="field-divided" placeholder="First" required/>&nbsp;
+    </div>
+
+    <div>
+    	<label>Last Name </label><Br>
+    	<input type="text" name="lname" id="lname" class="field-divided" placeholder="Last" required/>
+    </div>
+
+    <div>
+        <label>Email</label><Br>
         <input type="email" name="email" class="field-long" required/>
-    </li>
-    <li>
-    	<label>Phone Number</label>
+    </div>
+
+    <div>
+    	<label>Phone Number</label><Br>
         <input type="tel" name="pnumber" class="field-long" />
-    </li>
-    <li>
-    	<label>Which of these brands have you heard of?</label>
-    	<input type="checkbox" name="familiarPocky" id="pocky"> Pocky<br>
-		<input type="checkbox" name="familiarKitkat" id="kitkat"> Kitkat<br>
-    </li>
-	
-	<li>
-    	<label>Which of these brands have you tried?</label>
-    	<input type="checkbox" name="triedPocky" id="tpocky"> Pocky<br>
-		<input type="checkbox" name="triedKitkat" id="tkitkat"> Kitkat<br>
-    </li>
+  	</div>
+  </div>
 
-    <li>
-    	<label>Which of these brands do you prefer?</label>
-    	<input type="radio" name="preference" value="pocky"> Pocky<br>
-		<input type="radio" name="preference" value="kitkat"> Kitkat<br>
-		<input type="radio" name="preference" value="neither"> Neither
-    </li>
+  	<div class="radio-form">
 
-    <li>
+  	<div>
+  		<div>
+	    	<label>Which of these brands do you know?</label><br>
+	    	<input type="checkbox" name="familiarPocky" id="pocky"> Pocky<br>
+			<input type="checkbox" name="familiarKitkat" id="kitkat"> Kitkat<br>
+		</div>
+	</div>
+
+	<div>
+		<div>
+	    	<label>Which of these brands have you tried?</label><br>
+	    	<input type="checkbox" name="triedPocky" id="tpocky"> Pocky<br>
+			<input type="checkbox" name="triedKitkat" id="tkitkat"> Kitkat<br>
+		</div>
+	</div>
+
+    <div>
+    	<div>
+	    	<label>Which of these brands do you prefer?</label><br>
+	    	<input type="radio" name="preference" value="pocky"> Pocky<br>
+			<input type="radio" name="preference" value="kitkat"> Kitkat<br>
+			<input type="radio" name="preference" value="neither"> Neither
+		</div>
+	</div>
+
         <label>Why did you choose the answer above?</label>
         <textarea name="message" class="field-long field-textarea"></textarea>
-    </li>
-    <li>
+
         <input type="submit" value="Submit" />
-    </li>
-</ul>
+
+		</div>
 </form>
 </div>
 </div>
