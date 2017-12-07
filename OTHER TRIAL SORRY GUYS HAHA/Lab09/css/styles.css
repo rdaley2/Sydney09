@@ -33,6 +33,11 @@ h3{
 	text-align: center;
 }
 
+#pocky, #kitkats
+{
+	margin-top: 2rem;
+}
+
 figure{
 	float: left;
 	text-align: center;	
