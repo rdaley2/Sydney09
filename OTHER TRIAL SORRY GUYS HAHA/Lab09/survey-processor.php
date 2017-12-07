@@ -1,49 +1,7 @@
 <?php
-//creating a database connection
+require "includes/database.php";
 
-	$dbhost = "66.147.242.186";
-	$dbuser = "urcscon3_sydney";
-	$dbpass = "coffee1N";
-	$dbname = "urcscon3_sydney";
-
-	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-
-//HTML form values in $_POST
-	
-	$blanck = " ";	
-	$fname = Trim(stripslashes($_POST['fname']));
-	$lname = Trim(stripslashes($_POST['lname']));
-	$email = Trim(stripslashes($_POST['email']));
-	$pnumber = Trim(stripslashes($_POST['pnumber']));
-	if (empty($_POST['kitkat'])) {
-			$like_kit = $blanck;
-		}else{
-			$like_kit = Trim(stripcslashes($_POST['kitkat']));
-		}
-	if (empty($_POST['pocky'])) {
-			$like_poc = $blanck;
-		}else{
-			$like_poc = Trim(stripcslashes($_POST['pocky']));
-		}
-	if (empty($_POST['preference'])) {
-			$fav = $blanck;
-		}else{
-			$fav = Trim(stripcslashes($_POST['preference']));
-
-		}	
-	$message = Trim(stripcslashes($_POST['message']));
-
-//escape all strings
-	$fname = mysqli_real_escape_string($connection, $fname);
-	$lname = mysqli_real_escape_string($connection, $lname);
-	$email = mysqli_real_escape_string($connection, $email);
-	$pnumber = mysqli_real_escape_string($connection, $pnumber);
-	$like_kit = mysqli_real_escape_string($connection, $like_kit);
-	$like_poc = mysqli_real_escape_string($connection, $like_poc);
-	$fav = mysqli_real_escape_string($connection, $fav);
-	$message = mysqli_real_escape_string($connection, $message);
-
-
+/* OLD Scooter Boy code
 //databse query
 	$query  = "INSERT INTO survey (";
 	$query .= "  fname, lname, email, pnumber, like_poc, like_kit, fav, message";
@@ -52,14 +10,42 @@
 	$query .= ")";
 
 	$result = mysqli_query($connection, $query);
+	
+	*/
 
+if ( isset($_POST["familiarPocky"]) && isset($_POST["familiarKitkat"]) ) {
+	$familiar = "both";
+}
+elseif ( ! isset($_POST["familiarPocky"]) && ! isset($_POST["familiarKitkat"]) ) {
+	$familiar = "neither";
+}
+elseif ( isset($_POST["familiarPocky"]) ) {
+	$familiar = "pocky";
+}
+else {
+	$familiar = "kitkat";
+}
 
+if ( isset($_POST["triedPocky"]) && isset($_POST["triedKitkat"]) ) {
+	$tried = "both";
+}
+elseif ( ! isset($_POST["triedPocky"]) && ! isset($_POST["triedKitkat"]) ) {
+	$tried = "neither";
+}
+elseif ( isset($_POST["triedPocky"]) ) {
+	$tried = "pocky";
+}
+else {
+	$tried = "kitkat";
+}
+
+mysqli_query($db, "INSERT INTO survey9 (firstName, lastName, email, cellNum, familiar, tried, prefer, why) VALUES ('".escape($_POST["fname"])."', '".escape($_POST["lname"])."', '".escape($_POST["email"])."', '".escape($_POST["pnumber"])."', '".$familiar."', '".$tried."', '".escape($_POST["preference"])."', '".escape($_POST["message"])."');");
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>CSC174 Assignment 08- Sdyney</title>
+		<title>CSC174 Assignment 09 - Sydney</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/styles.css">
@@ -68,17 +54,8 @@
 	<body>
 	   <div class="container2">
 	   		<div class="thanksbox">
-	     		<h1> Thank you, <?php echo $_POST["fname"]; ?> for participating in our survey!</h1>
+	     		<h1>Thank you, <?php echo $_POST["fname"]; ?> for participating in our survey!</h1>
 	   		</div>
-	   		<div class="mainbox2">
-		   		<ul class="formformat">
-		   			<li>
-					   <form method="post" action="assignment08.html">
-					   	<input type="submit" value="Back to Survey" />
-					   </form>
-					</li>
-				</ul>
-			</div>
 	   </div>
 	</body>
 </html>
