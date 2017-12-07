@@ -22,6 +22,7 @@ html, body{
   grid-template-columns: 49% 49%;
   grid-template-rows: 49% 49%;
   grid-gap: 2% 2%;
+  margin-top: 40px;
 
 }
 * {box-sizing: border-box;}
