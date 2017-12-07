@@ -33,11 +33,6 @@ h3{
 	text-align: center;
 }
 
-#pocky, #kitkats
-{
-	margin-top: 2rem;
-}
-
 figure{
 	float: left;
 	text-align: center;	
@@ -50,65 +45,39 @@ figure{
   color: black;
 }
 
-
-
-
-
 .formgrid {
 
 
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*FORM DETAILS*/
-<style type="text/css">
 .formformat {
     margin:10px auto;
-    max-width: 400px;
     padding: 20px 12px 10px 20px;
     font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
 .formformat li {
     padding: 0;
     display: block;
     list-style: none;
     margin: 10px 0 0 0;
 }
-.formformat label{
+
+.formformat .question-text {
     margin:0 0 3px 0;
     padding:0px;
     display:block;
     font-weight: bold;
     color: #970000;
 }
-.formformat input[type=text], 
-.formformat input[type=number],
+
+.formformat input[type=text],
 .formformat input[type=search],
 .formformat input[type=time],
 .formformat input[type=url],
 .formformat input[type=email],
-.formformat input[type=pnumber],
-
+.formformat input[type=tel],
 textarea, 
 select{
     box-sizing: border-box;
@@ -123,10 +92,11 @@ select{
     -o-transition: all 0.30s ease-in-out;
     outline: none;  
 }
+
 .formformat input[type=text]:focus, 
 .formformat input[type=date]:focus,
 .formformat input[type=datetime]:focus,
-.formformat input[type=number]:focus,
+.formformat input[type=tel]:focus,
 .formformat input[type=search]:focus,
 .formformat input[type=time]:focus,
 .formformat input[type=url]:focus,
@@ -138,6 +108,13 @@ select{
     box-shadow: 0 0 8px #88D5E9;
     border: 1px solid #88D5E9;
 }
+
+.formformat .option {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
 .formformat .field-divided{
     width: 49%;
 }
@@ -163,4 +140,3 @@ select{
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
 }
-</style>

@@ -29,11 +29,11 @@
 
 	<div class="wrapper">
 
-		<div id="kitkats">
+		<div id="kitkat-logo">
 			<img src="images/KitKatWrapper.jpeg" alt="Kitkat">
 		</div>
 		
-		<div id="pocky">
+		<div id="pocky-logo">
 			<img src="images/pocky.jpg" alt="Pocky">
 		</div>
 
@@ -61,65 +61,63 @@ KitKats are a fun treat to share with friends, family, or even a stranger you me
 	
 	<h2>Survey</h2>
 
-		<form method="post" action="survey-processor.php">
-<div class="formformat">
-<div class="info-wrapper">
+	<form method="post" action="survey-processor.php">
+		<div class="formformat">
+			<div class="info-wrapper">
 
-	<div>
-    	<label>First Name </label><br>
-    	<input type="text" name="fname" id="fname" class="field-divided" placeholder="First" required/>&nbsp;
-    </div>
+				<div>
+					<div class="question-text">First Name</div>
+					<input type="text" name="fname" id="fname" class="field-long" placeholder="First" required>
+				</div>
 
-    <div>
-    	<label>Last Name </label><Br>
-    	<input type="text" name="lname" id="lname" class="field-divided" placeholder="Last" required/>
-    </div>
+				<div>
+					<div class="question-text">Last Name</div>
+					<input type="text" name="lname" id="lname" class="field-long" placeholder="Last" required>
+				</div>
 
-    <div>
-        <label>Email</label><Br>
-        <input type="email" name="email" class="field-long" required/>
-    </div>
+				<div>
+					<div class="question-text">Email</div>
+					<input type="email" name="email" class="field-long" required>
+				</div>
 
-    <div>
-    	<label>Phone Number</label><Br>
-        <input type="tel" name="pnumber" class="field-long" />
-  	</div>
-</div>
+				<div>
+					<div class="question-text">Phone Number</div>
+					<input type="tel" name="pnumber" class="field-long">
+				</div>
+			</div>
 
-<div class="radio-form">
+			<div class="radio-form">
 
-  	<div>
-  		<div>
-	    	<label>Which of these brands do you know?</label><br>
-	    	<input type="checkbox" name="familiarPocky" id="pocky"> Pocky<br>
-			<input type="checkbox" name="familiarKitkat" id="kitkat"> Kitkat<br>
+				<div>
+					<div class="question-text">Which of these brands do you know?</div>
+					<div class="option"><input type="checkbox" name="familiarPocky" id="pocky"><label for="pocky">Pocky</label></div>
+					<div class="option"><input type="checkbox" name="familiarKitkat" id="kitkat"><label for="kitkat">KitKat</label></div>
+				</div>
+
+				<div>
+					<div class="question-text">Which of these brands have you tried?</div>
+					<div class="option"><input type="checkbox" name="triedPocky" id="tpocky"><label for="tpocky">Pocky</label></div>
+					<div class="option"><input type="checkbox" name="triedKitkat" id="tkitkat"><label for="tkitkat">KitKat</label></div>
+				</div>
+
+				<div>
+					<div class="question-text">Which of these brands do you prefer?</div>
+					<div class="option"><input type="radio" name="preference" value="pocky" id="ppocky"><label for="ppocky">Pocky</label></div>
+					<div class="option"><input type="radio" name="preference" value="kitkat" id="pkitkat"><label for="pkitkat">KitKat</label></div>
+					<div class="option"><input type="radio" name="preference" value="neither" id="pneither"><label for="pneither">Neither</label></div>
+				</div>
+				
+				<div>
+					<label>Why did you choose the answers above?</label>
+					<textarea name="message" class="field-long field-textarea"></textarea>
+				</div>
+			</div>
+			
+			<div>
+				<input type="submit" value="Submit">
+			</div>
 		</div>
-	</div>
-
-	<div>
-		<div>
-	    	<label>Which of these brands have you tried?</label><br>
-	    	<input type="checkbox" name="triedPocky" id="tpocky"> Pocky<br>
-			<input type="checkbox" name="triedKitkat" id="tkitkat"> Kitkat<br>
-		</div>
-	</div>
-
-    <div>
-    	<div>
-	    	<label>Which of these brands do you prefer?</label><br>
-	    	<input type="radio" name="preference" value="pocky"> Pocky<br>
-			<input type="radio" name="preference" value="kitkat"> Kitkat<br>
-			<input type="radio" name="preference" value="neither"> Neither
-		</div>
-	</div>
-
-        <label>Why did you choose the answer above?</label>
-        <textarea name="message" class="field-long field-textarea"></textarea>
-        <br>
-        <input type="submit" value="Submit" />
-</div>
-</div>
-</form>
+	</form>
 </div>
 </div>
 
