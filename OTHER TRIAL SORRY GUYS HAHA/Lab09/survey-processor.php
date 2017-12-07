@@ -1,18 +1,6 @@
 <?php
 require "includes/database.php";
 
-/* OLD Scooter Boy code
-//databse query
-	$query  = "INSERT INTO survey (";
-	$query .= "  fname, lname, email, pnumber, like_poc, like_kit, fav, message";
-	$query .= ") VALUES (";
-	$query .= "  '{$fname}', '{$lname}','{$email}', '{$pnumber}', '{$like_kit}', '{$like_poc}', '{$fav}', '{$message}'";
-	$query .= ")";
-
-	$result = mysqli_query($connection, $query);
-	
-	*/
-
 if ( isset($_POST["familiarPocky"]) && isset($_POST["familiarKitkat"]) ) {
 	$familiar = "both";
 }

@@ -11,6 +11,7 @@ $db = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) or die("Database connec
 
 // Standardized escape function
 function escape($str) {
+	global $db;
 	return mysqli_real_escape_string($db, trim(stripslashes($str)));
 }
 
