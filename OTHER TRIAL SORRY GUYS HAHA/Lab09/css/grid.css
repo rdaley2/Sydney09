@@ -29,7 +29,8 @@ html, body{
 
 
 .wrapper > div {
-  border: 2px solid #d70021;
+/*  border: 2px solid #d70021;*/
+	margin-bottom: 1rem;
   border-radius: 5px;
   background-color: #e6ce8e;
   padding: 1em;
