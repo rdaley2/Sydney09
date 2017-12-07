@@ -117,7 +117,6 @@ html, body{
   padding-left: 30px;
   min-height:100%;
   margin-bottom: auto;
-  background-image: url('../images/celebration.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -136,5 +135,4 @@ html, body{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row:1;
-  margin-top: 300px;
 }
