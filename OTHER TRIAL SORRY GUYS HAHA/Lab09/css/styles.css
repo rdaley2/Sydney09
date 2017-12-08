@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Patua+One");
-
+@import url('https://fonts.googleapis.com/css?family=Dosis|Patua+One');
 body{
 	word-break: keep-all;
     background-color:#CA3632;
@@ -60,7 +59,7 @@ td, th {
     margin: 10px auto;
     padding: 20px 12px 10px 20px;
     font: 13px;
-    font-family: ’Open Sans Condensed';
+   font-family:'Dosis', sans-serif;
 }
 
 .formformat li {
