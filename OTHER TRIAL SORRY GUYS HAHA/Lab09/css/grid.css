@@ -191,11 +191,6 @@ img
   min-width: 200px;
 }
 
-ul
-{
-	padding: 0;
-}
-
 
 .thanksbox {
   grid-column-start: 2;
