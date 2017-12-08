@@ -1,4 +1,4 @@
-@include("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Patua+One");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Patua+One");
 
 body{
 	word-break: keep-all;
@@ -25,7 +25,7 @@ h2 {
 }
 
 h1, h2 {
-  font-family: 'Patua One', sans-serif;
+  font-family: "Patua One", sans-serif;
   clear: both;
 }
 
