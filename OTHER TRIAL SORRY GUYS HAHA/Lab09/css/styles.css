@@ -46,14 +46,8 @@ figure {
   color: black;
 }
 
-.formgrid {
-
-
-
-}
-
 .formformat {
-    margin:10px auto;
+    margin: 10px auto;
     padding: 20px 12px 10px 20px;
     font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -73,12 +67,29 @@ figure {
     color: #970000;
 }
 
+.formformat .login-form {
+	margin-left: 60px;
+}
+
+.formformat .login-row {
+	padding-bottom: 7px;
+}
+
+.formformat .form-error {
+	margin: 30px 60px;
+	background-color: red;
+	font-weight: bold;
+	color: #FCFBE3;
+	padding: 9px;
+}
+
 .formformat input[type=text],
 .formformat input[type=search],
 .formformat input[type=time],
 .formformat input[type=url],
 .formformat input[type=email],
 .formformat input[type=tel],
+.formformat input[type=password],
 textarea, 
 select{
     box-sizing: border-box;
@@ -102,6 +113,7 @@ select{
 .formformat input[type=time]:focus,
 .formformat input[type=url]:focus,
 .formformat input[type=email]:focus,
+.formformat input[type=password]:focus,
 .formformat textarea:focus, 
 .formformat select:focus{
     -moz-box-shadow: 0 0 8px #88D5E9;

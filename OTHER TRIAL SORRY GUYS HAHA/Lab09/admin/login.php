@@ -20,8 +20,8 @@ if ( isset($_SESSION["user"]) ) {
 		<link rel="stylesheet" href="../css/grid.css">
 	</head>
 	<body>
-	   <div class="container2">
-	   		<div class="thanksbox">
+	   <div class="container">
+	   		<div class="formformat">
 	     		<h1>Admin Login:</h1>
 				
 				<?php
@@ -50,11 +50,11 @@ if ( isset($_SESSION["user"]) ) {
 						<div class="login-row">Password: <input type="password" name="pass"></div>
 						<div class="login-row"><input type="submit" value="Go!"></div>
 					</form>
+					
+					<p>
+						<a href="register.php">Register for an account</a>
+					</p>
 				</div>
-				
-				<p>
-					<a href="register.php">Register for an account</a>
-				</p>
 			</div>
 	   </div>
 	</body>
