@@ -3,7 +3,7 @@ html, body{
   height:100%;
 }
 
-.container{
+.container {
   /*display: grid;*/
   margin: 0 auto;
   width: 70%;
@@ -15,6 +15,7 @@ html, body{
   background-color:#FCFBE3;
   padding-right: 30px;
   padding-left: 30px;
+  padding-top: 30px;
 }
 
 .wrapper {
