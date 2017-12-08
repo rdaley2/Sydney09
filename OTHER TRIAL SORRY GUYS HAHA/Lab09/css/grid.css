@@ -87,7 +87,7 @@ img
   border-radius: 5px;
  /* background-color: #e6ce8e;*/
   padding: 1em;
-  color: #d70021;
+  color: #970000;
 }
 
 .radio-form > div > div{
@@ -99,9 +99,6 @@ img
   color: #42211B;
 }
 
-.radio-form > div > div > div{
-	color: #d70021;
-}
 
 .imagegrid img{
   max-width: 100%;
