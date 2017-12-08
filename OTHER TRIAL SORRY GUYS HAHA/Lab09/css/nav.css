@@ -8,7 +8,7 @@ body {margin:0;}
   width: 100%;
 }
 
-.topnav a, .topnav span {
+.topnav a {
   float: right;
   display: block;
   color: #f2f2f2;
@@ -19,7 +19,14 @@ body {margin:0;}
 }
 
 .topnav span{
-  float:left:
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
 }
 
 .topnav a:hover {
