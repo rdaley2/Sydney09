@@ -35,6 +35,26 @@ $result = mysqli_query($db, "SELECT * FROM survey9;");
 		<div class="container">
 			<h1>Survey Results</h1>
 			
+			<?php
+				if ( isset($_GET["err"]) ) {
+					echo "<div class=\"form-error\">";
+					
+					if ( $_GET["err"] == "del_ok" ) {
+						echo "The selected response has been deleted.";
+					}
+					
+					elseif ( $_GET["err"] == "edit_ok" ) {
+						echo "Your edits have been saved.";
+					}
+					
+					else {
+						echo "Ben only had one job!  Result code was \"".$_GET["err"]."\"";
+					}
+					
+					echo "</div>";
+				}
+			?>
+			
 			<table>
 				<tr>
 					<th>Name</th>

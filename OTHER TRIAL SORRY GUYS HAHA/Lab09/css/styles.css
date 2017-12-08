@@ -85,7 +85,7 @@ td, th {
 	padding-bottom: 7px;
 }
 
-.formformat .form-error {
+.form-error {
 	margin: 30px 60px;
 	background-color: red;
 	font-weight: bold;
