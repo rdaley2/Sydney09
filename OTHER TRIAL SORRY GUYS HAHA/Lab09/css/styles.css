@@ -59,7 +59,7 @@ td, th {
 .formformat {
     margin: 10px auto;
     padding: 20px 12px 10px 20px;
-    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font: 13px ’Open Sans Condensed', sans-serif;
 }
 
 .formformat li {
