@@ -67,6 +67,8 @@ list-style-image: url(images/bullet.png); }
 }
 
 
+.wrapper p {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 
-[we need the font: font-family: ’Open Sans
-Condensed', sans-serif; in somewhere]
+

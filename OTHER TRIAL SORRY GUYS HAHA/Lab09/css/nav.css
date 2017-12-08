@@ -8,7 +8,7 @@ body {margin:0;}
   width: 100%;
 }
 
-.topnav a {
+.topnav a, .topnav span {
   float: left;
   display: block;
   color: #f2f2f2;

@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Patua+One");
+
 body{
-	
 	word-break: keep-all;
-        background-color:#CA3632;
+    background-color:#CA3632;
 }	
 
 h1{	
@@ -14,77 +15,91 @@ h1{
   color: red;
 }
 
-h2{
+h2 {
+	font-style: italic;
 	border-left-width: 5px;
 	text-align: center;
-        font-size: 180%;
-        letter-spacing: 1px;
-        color: #990000;
+	font-size: 180%;
+	letter-spacing: 1px;
+	color: #990000;
 }
 
-h1, h2{
-  font-family: 'Patua One', cursive;
+h1, h2 {
+  font-family: "Patua One", sans-serif;
   clear: both;
 }
 
-h3{
+h3 {
 	color: #990000;
 	text-align: center;
 }
 
-#pocky, #kitkats
-{
-	margin-top: 2rem;
-}
-
-figure{
+figure {
 	float: left;
 	text-align: center;	
 }
 
-input[type="submit"]
-{
-	margin-left: 90%;
-	margin-bottom: 2rem;
+table {
+	border: 1px solid black;
+	margin: 0 auto;
 }
 
-.footer{
+td, th {
+	border: 1px solid black;
+	padding: 7px;
+}
+
+.footer {
   padding-top: 200px;
   margin-left: 420px;
   font-size: 20px;
   color: black;
 }
 
-
-/*FORM DETAILS*/
-<style type="text/css">
 .formformat {
-    margin:10px auto;
-    max-width: 400px;
+    margin: 10px auto;
     padding: 20px 12px 10px 20px;
     font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
 .formformat li {
     padding: 0;
     display: block;
     list-style: none;
     margin: 10px 0 0 0;
 }
-.formformat label{
+
+.formformat .question-text {
     margin:0 0 3px 0;
     padding:0px;
     display:block;
     font-weight: bold;
     color: #970000;
 }
-.formformat input[type=text], 
-.formformat input[type=number],
+
+.formformat .login-form {
+	margin-left: 60px;
+}
+
+.formformat .login-row {
+	padding-bottom: 7px;
+}
+
+.form-error {
+	margin: 30px 60px;
+	background-color: red;
+	font-weight: bold;
+	color: #FCFBE3;
+	padding: 9px;
+}
+
+.formformat input[type=text],
 .formformat input[type=search],
 .formformat input[type=time],
 .formformat input[type=url],
 .formformat input[type=email],
-.formformat input[type=pnumber],
-
+.formformat input[type=tel],
+.formformat input[type=password],
 textarea, 
 select{
     box-sizing: border-box;
@@ -99,14 +114,16 @@ select{
     -o-transition: all 0.30s ease-in-out;
     outline: none;  
 }
+
 .formformat input[type=text]:focus, 
 .formformat input[type=date]:focus,
 .formformat input[type=datetime]:focus,
-.formformat input[type=number]:focus,
+.formformat input[type=tel]:focus,
 .formformat input[type=search]:focus,
 .formformat input[type=time]:focus,
 .formformat input[type=url]:focus,
 .formformat input[type=email]:focus,
+.formformat input[type=password]:focus,
 .formformat textarea:focus, 
 .formformat select:focus{
     -moz-box-shadow: 0 0 8px #88D5E9;
@@ -114,6 +131,94 @@ select{
     box-shadow: 0 0 8px #88D5E9;
     border: 1px solid #88D5E9;
 }
+
+/* Adapted from http://www.csscheckbox.com/checkbox/43497/tiny-rounded-red-css-checkbox/ */
+.formformat input[type=checkbox] {
+	position:absolute;
+	z-index:-1000;
+	left:-1000px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height:1px;
+	width:1px;
+	margin:-1px;
+	padding:0;
+	border:0;
+}
+
+.formformat input[type=checkbox] + label.check-label {
+	padding-left: 23px;
+	height: 18px; 
+	display: inline-block;
+	line-height: 18px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.formformat input[type=checkbox]:checked + label.check-label {
+	background-position: 0 -18px;
+}
+
+label.check-label {
+	background-image:url(../images/checkbox.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Adapted from http://www.csscheckbox.com/css-radio-button/40123/ultra-simple-black-and-red-radio/ */
+
+.formformat input[type=radio] {
+	position: absolute;
+	z-index: -1000;
+	left: -1000px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.formformat input[type=radio] + label.radio-label {
+	padding-left: 17px;
+	height: 12px; 
+	display: inline-block;
+	line-height: 12px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 12px;
+	vertical-align: middle;
+	cursor: pointer;
+
+}
+
+.formformat input[type=radio]:checked + label.radio-label {
+	background-position: 0 -12px;
+}
+
+label.radio-label {
+	background-image:url(../images/radio_edit.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.formformat .option {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
 .formformat .field-divided{
     width: 49%;
 }
@@ -121,22 +226,25 @@ select{
 .formformat .field-long{
     width: 100%;
 }
+
 .formformat .field-select{
     width: 100%;
 }
+
 .formformat .field-textarea{
     height: 100px;
 }
+
 .formformat input[type=submit], .formformat input[type=button]{
     background: #ff1919;
     padding: 8px 15px 8px 15px;
     border: none;
     color: #fff;
 }
+
 .formformat input[type=submit]:hover, .formformat input[type=button]:hover{
     background: #FF4500;
     box-shadow:none;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
 }
-</style>

@@ -8,8 +8,8 @@
 		<link rel="stylesheet" href="../css/grid.css">
 	</head>
 	<body>
-	   <div class="container2">
-	   		<div class="thanksbox">
+	   <div class="container">
+	   		<div class="formformat">
 	     		<h1>Register an account:</h1>
 				
 				<?php
