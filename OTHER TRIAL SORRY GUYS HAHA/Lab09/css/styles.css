@@ -39,6 +39,16 @@ figure {
 	text-align: center;	
 }
 
+table {
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 7px;
+}
+
 .footer {
   padding-top: 200px;
   margin-left: 420px;
