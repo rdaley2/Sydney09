@@ -242,7 +242,7 @@ label.radio-label {
     color: #fff;
 }
 
-.formformat input[type=submit]:hover, .formformat input[type=button]:hover{
+.formformat input[type=submit]{
     background-image:url(../images/submithere.png);
 
 }
