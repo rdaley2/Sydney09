@@ -23,7 +23,6 @@ if ( isset($_SESSION["user"]) ) {
 	<body>
 		<div class="topnav" id="myTopnav">
 		  <a href="../assignment09.html">Home</a>
-		  <a href="#">Contact</a>
 		  <a href="admin/login.php">Admin</a>
 		</div>
 	   
