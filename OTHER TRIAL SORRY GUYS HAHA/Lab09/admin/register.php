@@ -6,9 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/styles.css">
 		<link rel="stylesheet" href="../css/grid.css">
+		<link rel="stylesheet" href="../css/nav.css">
 	</head>
 	<body>
-	   <div class="container">
+		<div class="topnav" id="myTopnav">
+                <a href="../assignment09.html">Home</a>
+		</div>
+		
+		<div class="container">
 	   		<div class="formformat">
 	     		<h1>Register an account:</h1>
 				

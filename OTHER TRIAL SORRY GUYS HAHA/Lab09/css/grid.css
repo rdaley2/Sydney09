@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Patua+One');
 html, body{
   margin:0;
   height:100%;
@@ -42,7 +43,9 @@ img
   border-radius: 5px;
   background-color: #e6ce8e;
   padding: 1em;
-  color: #d9480f;
+  color: #42211B;
+  font-family: 'Dosis', sans-serif;
+	
 }
 
 .info-wrapper {
@@ -84,7 +87,7 @@ img
   border-radius: 5px;
  /* background-color: #e6ce8e;*/
   padding: 1em;
-  color: #d9480f;
+  color: #970000;
 }
 
 .radio-form > div > div{
@@ -93,9 +96,8 @@ img
   border-radius: 5px;
  /* background-color: #FCFBE3;*/
   padding: 1em;
-  color: #d9480f;
+  color: #42211B;
 }
-
 
 
 .imagegrid img{

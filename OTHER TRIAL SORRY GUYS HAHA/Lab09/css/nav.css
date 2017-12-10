@@ -8,14 +8,25 @@ body {margin:0;}
   width: 100%;
 }
 
-.topnav a, .topnav span {
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav span{
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
+  
 }
 
 .topnav a:hover {

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Patua+One");
-
+@import url('https://fonts.googleapis.com/css?family=Dosis|Patua+One');
 body{
 	word-break: keep-all;
     background-color:#CA3632;
@@ -59,7 +58,8 @@ td, th {
 .formformat {
     margin: 10px auto;
     padding: 20px 12px 10px 20px;
-    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font: 13px;
+   font-family:'Dosis', sans-serif;
 }
 
 .formformat li {
@@ -243,8 +243,9 @@ label.radio-label {
 }
 
 .formformat input[type=submit]:hover, .formformat input[type=button]:hover{
-    background: #FF4500;
+    background:black;
     box-shadow:none;
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
+}
 }
